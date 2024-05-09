@@ -41,7 +41,7 @@ void AGameWorld::BeginPlay() {
     Super::BeginPlay();
 
     InitializePointers();
-    //painter_ptr->BeginPlayFunction();
+    painter_ptr->BeginPlayFunction();
 
 
     if (painter_ptr) {
