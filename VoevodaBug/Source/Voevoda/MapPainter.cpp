@@ -192,7 +192,7 @@ void AMapPainter::UpdateTileVision(int32 X, int32 Y, VisionType vision) {
 void AMapPainter::BeginPlay() {
     Super::BeginPlay();
 
-    BeginPlayFunction();
+  //  BeginPlayFunction();
 
  /*   for (TActorIterator<APaperTileMapActor> ActorItr(GetWorld()); ActorItr;
         ++ActorItr) {
