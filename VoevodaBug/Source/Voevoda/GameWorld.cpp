@@ -94,7 +94,6 @@ void AGameWorld::BeginPlay() {
         playerCharacter->InitializeStrategist();
         SupplyArmyInteractorInstance.SetMapAndPlayerCharacter(playerCharacter, strategists, structures);
 
-        //AStrategist new_strategist(playerCharacter->Strategist);
     }
     else {
         UE_LOG(LogTemp, Warning, TEXT("playerCharacter is nullptr."));
@@ -106,27 +105,3 @@ void AGameWorld::BeginPlay() {
     GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, message2);
 }
 
-//for (auto& castle_pos : map_ptr->CastlesInitPos) {
- //    AStructure new_castle(castle_pos);
- //    structures.Add(&new_castle);
- //}
-        //for (auto& castle_pos : map_ptr->CastlesInitPos) {
-        //    AStructure new_castle(castle_pos);
-        //    structures.Add(&new_castle);
-        //}
-/* AStrategist new_strategist(general_pos);
-          //  strategists.Add(&new_strategist);*/
-
-            // new_city->position = map_ptr->CitiesInitPos[id];
-                       //new_city->SetOwner();
-                       //new_city->owner = strategists[id];
-
- //new_city->position = map_ptr->CitiesInitPos[id];
-            //new_city->SetOwner();
-            //new_city->owner = strategists[randomStrategist];
-//
-//for (auto& general_pos : map_ptr->GeneralsInitPos) {
-//    AStrategist* Strategist = NewObject<AStrategist>(this);
-//    Strategist->general.position = general_pos;
-//    strategists.Add(Strategist);
-//}
